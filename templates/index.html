@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %} My Website Portfolio {% endblock %}
+
+{% block content %}
+
+<div class="hero-section">
+<div class="glass-card profile-card">
+  <img src="/static/images/QPrioleau_LinkedIn_Profile_Smiling_Clear_Background.png" class="card-img-top profile-img" alt="Quincy Prioleau">
+  <div class="card-body">
+    <h4 class="card-title">Quincy Prioleau</h4>
+    <p class="card-text">Full Stack Web Developer</p>
+      <p class="card-text">"Delivering web solutions securely!"</p>
+   <p class="card-text"></p>
+  </div>
+  <div class="card-body">
+
+
+      </div>
+    </div>
+
+
+<div class="hero-text">
+<div class="glass-card">
+<p>Hi, my name is Quincy, and I live in Naples, Florida. I develop websites and
+  have an extended background in cyber-security. I have a passion for technology and
+providing advanced digital solutions.</p>
+  <div class="card-body">
+    <button type="button" class="button small">
+    <a href="{{url_for('contact')}}" class="card-link">Contact Me</a>
+      </button>
+
+    <button type="button" class="button small">
+    <a href="{{url_for('portfolio')}}" class="card-link">My Portfolio</a>
+      </button>
+  </div>
+  </div>
+
+</div>
+</div>
+{% endblock %}
